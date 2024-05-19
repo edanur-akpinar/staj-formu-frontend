@@ -1,0 +1,500 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    display: grid;
+    height: 100vh;
+    place-items: center ;
+    background: linear-gradient(to right,#dfabc5 0%,
+    #1da1f2 100%);
+}
+
+.container {
+    background: #fff;
+    max-width: 350px;
+    width: 100%;
+    padding: 25px 30px;
+    border-radius: 5px;
+    position: relative;
+}
+
+.container .logo img {
+    position: absolute;
+    width: 90px;
+    height: 90px;
+    left: 70%;
+    top: 5px;
+    border-radius: 50%;
+    border: 5px solid #0a1d99;
+}
+
+
+.container form .title {
+    font-size: 29px;
+    font-weight: 600;
+    margin: 20px 0 10px 0;
+    position: relative;
+}
+
+
+
+.container form .title::before {
+    content: '';
+    position: absolute;
+    height: 4px;
+    width: 33px;
+    bottom: 2px;
+    left: 0;
+    border-radius: 5px;
+    background: #1da1f2;
+}
+
+ 
+
+.container form .input-box {
+    width: 100%;
+    height: 45px;
+    margin-top: 25px;
+    position: relative;
+}
+
+.container form .input-box input {
+    height: 100%;
+    width: 100%;
+    outline: none;
+    font-size: 16px;
+    border: none;
+}
+
+.container form .underline:before {
+    position: absolute;
+    content: '';
+    height: 2px;
+    width: 100%;
+    background: #ccc;
+    left: 0;
+    bottom: 0;
+}
+
+.container form .underline:after {
+    position: absolute;
+    content: '';
+    height: 2px;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    background: rgb(51, 184, 241);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: all 0.3s ease;
+}
+
+.container form .input-box input:focus~.underline:after,
+.container form .input-box input:valid~.underline:after {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+.container form .button {
+    margin: 40px 0 20px 0;
+}
+
+.container form .input-box input[type="submit"] {
+    font-size: 17px;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    background: rgb(51, 184, 241);
+    transition: all 0.3s ease;
+}
+
+.container form .input-box input[type="submit"]:hover {
+    letter-spacing: 1px;
+    background: rgba(0, 0, 0, 0.15);
+    color: rgb(51, 184, 241);
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+
+.container .text{
+    font-size: 14px;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+/* Öğrenci formu kısmı */
+.container {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+}
+
+.container .header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.container .header h1,
+.container .header h2,
+.container .header h3 {
+    margin: 0;
+}
+
+.container .title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.container .input-box {
+    margin-bottom: 15px;
+}
+
+.container .input-box input[type="text"],
+.container .input-box input[type="tel"],
+.container .input-box input[type="email"],
+.container .input-box input[type="number"],
+.container .input-box input[type="date"] {
+    font-size: 16px;
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.container .image-upload {
+    margin-top: 20px;
+}
+
+.container .image-upload input[type="file"] {
+    display: none;
+}
+
+.container .image-upload label {
+    cursor: pointer;
+    padding: 10px 15px;
+    background-color: #1da1f2;
+    color: #fff;
+    border-radius: 5px;
+}
+
+.container .image-upload label:hover {
+    background-color: #0a1d99;
+}
+
+.container .nufus-sigorta,
+.container .health-insurance {
+    margin-top: 50px;
+}
+
+.container .nufus-sigorta .subtitle,
+.container .health-insurance .subtitle {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.container .nufus-sigorta .input-box,
+.container .health-insurance .input-box {
+    margin-bottom: 15px;
+}
+
+
+
+.container .nufus-sigorta .health-insurance .subtitle {
+    margin-top: 50px; /* Sağlık Güvencesi başlığı ile Doğum Tarihi kutucuğu arasındaki boşluğu artırır */
+}
+
+
+
+
+
+
+
+/*kurumformu kısmı*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    display: grid;
+    height: 100vh;
+    place-items: center;
+    background: linear-gradient(to right, #dfabc5 0%, #1da1f2 100%);
+}
+
+.container {
+    background: #fff;
+    max-width: 350px;
+    width: 100%;
+    padding: 25px 30px;
+    border-radius: 5px;
+    position: relative;
+    margin-top: 50px; /* Sayfada bir miktar boşluk bırakmak için */
+}
+
+.container .title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.container .input-box {
+    margin-top: 20px;
+}
+
+.container .input-box input {
+    height: 100%;
+    width: 100%;
+    outline: none;
+    font-size: 16px;
+    border: none;
+}
+
+.container .input-box input[type="text"],
+.container .input-box input[type="tel"],
+.container .input-box input[type="email"] {
+    border-bottom: 2px solid #ccc;
+}
+
+.container .input-box label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.container .button {
+    margin-top: 20px;
+}
+
+.container .input-box input[type="submit"] {
+    font-size: 17px;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    background: rgb(51, 184, 241);
+    transition: all 0.3s ease;
+}
+
+.container .input-box input[type="submit"]:hover {
+    letter-spacing: 1px;
+    background: rgba(0, 0, 0, 0.15);
+    color: rgb(51, 184, 241);
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+.container .image-upload {
+    margin-top: 20px;
+}
+
+.container .image-upload input[type="file"] {
+    display: none;
+}
+
+.container .image-upload label {
+    cursor: pointer;
+    padding: 10px 15px;
+    background-color: #1da1f2;
+    color: #fff;
+    border-radius: 5px;
+}
+
+.container .image-upload label:hover {
+    background-color: #0a1d99;
+}
+
+
+
+/* Staj Komisyonu Onayı sayfası */
+.container .title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.container .input-box {
+    margin-bottom: 15px;
+}
+
+.container .input-box label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.container .input-box input[type="file"],
+.container .input-box input[type="date"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.container .input-box input[type="submit"] {
+    cursor: pointer;
+    padding: 10px 15px;
+    background-color: #1da1f2;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+}
+
+.container .input-box input[type="submit"]:hover {
+    background-color: #0a1d99;
+}
+
+
+
+/* Dekanlık Onayı sayfası */
+.container .title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.container .input-box {
+    margin-bottom: 15px;
+}
+
+.container .input-box label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.container .input-box input[type="file"],
+.container .input-box input[type="date"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.container .input-box input[type="submit"] {
+    cursor: pointer;
+    padding: 10px 15px;
+    background-color: #1da1f2;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+}
+
+.container .input-box input[type="submit"]:hover {
+    background-color: #0a1d99;
+}
+
+
+
+/* S.K.S. Daire Başkanlığı Onayı sayfası */
+.container .title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.container p {
+    margin-bottom: 20px;
+}
+
+.container .input-box {
+    margin-bottom: 15px;
+}
+
+.container .input-box label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.container .input-box input[type="file"],
+.container .input-box input[type="date"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.container .input-box input[type="submit"] {
+    cursor: pointer;
+    padding: 10px 15px;
+    background-color: #1da1f2;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+}
+
+.container .input-box input[type="submit"]:hover {
+    background-color: #0a1d99;
+}
+
+
+
+
+/* Bölüm Başkanı Onayı sayfası */
+.container .title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.container .text {
+    margin-bottom: 20px;
+}
+
+.container .text p {
+    margin-bottom: 10px;
+}
+
+.container .text p:last-child {
+    margin-bottom: 0;
+}
+
+.container .input-box {
+    margin-bottom: 15px;
+}
+
+.container .input-box label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.container .input-box input[type="text"],
+.container .input-box input[type="file"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.container .input-box input[type="submit"] {
+    cursor: pointer;
+    padding: 10px 15px;
+    background-color: #1da1f2;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+}
+
+.container .input-box input[type="submit"]:hover {
+    background-color: #0a1d99;
+}
+

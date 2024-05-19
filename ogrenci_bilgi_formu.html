@@ -1,0 +1,116 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Öğrenci Bilgi Formu</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>ERZURUM TEKNİK ÜNİVERSİTESİ</h1>
+            <h2>Mühendislik ve Mimarlık Fakültesi</h2>
+            <h3>ZORUNLU STAJ FORMU</h3>
+        </div>
+        <div class="title">Öğrenci Kimlik Bilgileri</div>
+        <form action="#">
+            <div class="input-box">
+                <label for="ad">Adınız:</label>
+                <input type="text" id="ad" placeholder="Adınız">
+            </div>
+            <div class="input-box">
+                <label for="soyad">Soyadınız:</label>
+                <input type="text" id="soyad" placeholder="Soyadınız">
+            </div>
+            <div class="input-box">
+                <label for="ogrenciNo">Öğrenci Numaranız:</label>
+                <input type="text" id="ogrenciNo" placeholder="Öğrenci Numaranız">
+            </div>
+            <div class="input-box">
+                <label for="bolum">Okuduğunuz Bölüm:</label>
+                <input type="text" id="bolum" placeholder="Okuduğunuz Bölüm">
+            </div>
+            <div class="input-box">
+                <label for="ogretimYili">Öğretim Yılı ve Dönemi:</label>
+                <input type="text" id="ogretimYili" placeholder="Öğretim Yılı ve Dönemi">
+            </div>
+            <div class="input-box">
+                <label for="telefon">Telefon Numaranız:</label>
+                <input type="tel" id="telefon" placeholder="Telefon Numaranız">
+            </div>
+            <div class="input-box">
+                <label for="eposta">E-posta Adresiniz:</label>
+                <input type="email" id="eposta" placeholder="E-posta Adresiniz">
+            </div>
+            <div class="input-box">
+                <label for="ikametgah">İkametgah Adresiniz:</label>
+                <input type="text" id="ikametgah" placeholder="İkametgah Adresiniz">
+            </div>
+            <div class="input-box">
+                <label for="stajGunSayisi">Staj Yapılacak Gün Sayısı:</label>
+                <input type="number" id="stajGunSayisi" placeholder="Staj Yapılacak Gün Sayısı">
+            </div>
+            <div class="input-box">
+                <label for="baslamaTarihi">Başlama Tarihi:</label>
+                <input type="date" id="baslamaTarihi" placeholder="Başlama Tarihi">
+            </div>
+            <div class="input-box">
+                <label for="bitisTarihi">Bitiş Tarihi:</label>
+                <input type="date" id="bitisTarihi" placeholder="Bitiş Tarihi">
+            </div>
+
+            <div class="nufus-sigorta">
+                <div class="subtitle">ÖĞRENCİNİN NÜFUS KAYIT ve SİGORTA BİLGİLERİ</div>
+
+                <div class="input-box">
+                    <label for="tcKimlik">TC Kimlik Numarası:</label>
+                    <input type="text" id="tcKimlik" placeholder="TC Kimlik Numarası">
+                </div>
+                <div class="input-box">
+                    <label for="sskNo">SSK Numarası (varsa):</label>
+                    <input type="text" id="sskNo" placeholder="SSK Numarası (varsa)">
+                </div>
+                <div class="input-box">
+                    <label for="babaAdi">Baba Adı:</label>
+                    <input type="text" id="babaAdi" placeholder="Baba Adı">
+                </div>
+                <div class="input-box">
+                    <label for="anneAdi">Anne Adı:</label>
+                    <input type="text" id="anneAdi" placeholder="Anne Adı">
+                </div>
+                <div class="input-box">
+                    <label for="dogumYeri">Doğum Yeri:</label>
+                    <input type="text" id="dogumYeri" placeholder="Doğum Yeri">
+                </div>
+                <div class="input-box">
+                    <label for="dogumTarihi">Doğum Tarihi:</label>
+                    <input type="date" id="dogumTarihi" placeholder="Doğum Tarihi">
+                </div>
+                <div class="health-insurance">
+                    <div class="subtitle">Sağlık Güvencesi</div>
+                    <input type="radio" id="kendisi" name="guvence" value="kendisi">
+                    <label for="kendisi">Kendisi</label><br>
+                    <input type="radio" id="anneBabasi" name="guvence" value="anneBabasi">
+                    <label for="anneBabasi">Anne/Babası</label><br>
+                    <input type="radio" id="yesilKart" name="guvence" value="yesilKart">
+                    <label for="yesilKart">Yeşil Kart</label><br>
+                    <input type="radio" id="yok" name="guvence" value="yok">
+                    <label for="yok">Yok</label>
+                </div>
+            </div>
+            <p class="disclaimer">Bu belge üzerindeki bilgilerin doğru olduğunu beyan ediyor ve yanlış beyan ya da staj yerine gitmeme veya yarıda bırakma gibi durumlarda sigorta işlemleri nedeni ile doğacak yasal para cezasını ödeyeceğimi taahhüt ediyorum. Staj evrakının hazırlanmasını arz ederim.</p>
+
+        </form>
+        <div class="input-box">
+            <label for="resimYukle">Resim Yükle</label>
+            <input type="file" id="resimYukle" accept="image/*">
+        </div>
+            <div class="input-box">
+                <input type="submit" value="Bilgileri Kaydet">
+            </div>
+        
+    </div>
+</body>
+</html>

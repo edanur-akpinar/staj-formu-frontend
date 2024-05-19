@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bölüm Başkanı Onayı</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="title">Bölüm Başkanı Onayı</div>
+        <div class="text">
+            <p>İLGİLİ MAKAMA</p>
+            <p>Aşağıda kimlik bilgileri yazılı öğrencimizin toplam 60 gün staj yapma zorunluluğu vardır. Öğrencimizin, kurum/kuruluşunuzda yapmak istediği <span id="stajGunSayisiPlaceholder">………</span> gün staj talebinin uygun bulunup-bulunmadığının, formda 3.Bölüm bilgileri ve onayı ile belirtilmesini arz/rica eder, göstereceğiniz ilgiye teşekkür ederim.</p>
+        </div>
+        <form action="#">
+            <div class="input-box">
+                <label for="stajGunSayisi">Staj Gün Sayısı:</label>
+                <input type="text" id="stajGunSayisi" placeholder="Staj Gün Sayısı">
+            </div>
+            <div class="input-box">
+                <label for="bolumBaskani">Bölüm Başkanı Adı:</label>
+                <input type="text" id="bolumBaskani" placeholder="Bölüm Başkanı Adı">
+            </div>
+            <div class="input-box">
+                <label for="imza">İmza Yükle:</label>
+                <input type="file" id="imza" accept="image/*">
+            </div>
+            <div class="input-box">
+                <input type="submit" value="Onayla">
+            </div>
+        </form>
+    </div>
+</body>
+</html>
